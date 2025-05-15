@@ -1369,14 +1369,14 @@ event = {
 
 	action = {
 		name = 2611a
-		ai_chance = 50
+		ai_chance = 1
 		command = { type = relation which = ENG value = 25 }
 		command = { type = dissent value = -5 }
 		command = { type = local_setflag which = SOVMoscow }
 	}
 	action = {
 		name = 2611b
-		ai_chance = 50
+		ai_chance = 99
 		command = { type = capital which = 668 } # Kubyschiev
 		command = { type = relation which = ENG value = -15 }
 		command = { type = construct which = infrastructure where = 572 value = -40 }

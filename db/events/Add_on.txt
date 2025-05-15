@@ -16741,7 +16741,7 @@ event = {
 
 	action = {
 		name = ACTION_NAME_GREAT
-		command = { trigger = { nuclear_reactor = { country = GER value = 0 } } type = construct which = nuclear_reactor where = 135 value = 2 }
+		command = { trigger = { nuclear_reactor = { country = GER value = 0 } } type = construct which = nuclear_reactor where = 168 value = 2 }
 	}
 }
 

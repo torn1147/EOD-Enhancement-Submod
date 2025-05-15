@@ -39,14 +39,16 @@ event = {
 	
 
 	action	 = {
-		name = "Buff Germany and Japan" #12101a
+		name = "Buff Germany/Italy & Japan" #12101a
 		command = { type = trigger which = 12104 } 
-		command = { type = trigger which = 12105 } 
+		command = { type = trigger which = 12105 }
+		command = { type = trigger which = 12106 } 
 	}
 
 	action	 = {
-		name = "Buff Germany" #12101b
-		command = { type = trigger which = 12104 } 
+		name = "Buff Germany/Italy" #12101b
+		command = { type = trigger which = 12104 }
+		command = { type = trigger which = 12106 } 
 	}
 
 	action	 = {
@@ -119,6 +121,25 @@ event = {
 	action = {
 		name = "12105a" #Adds IC
 		command = { type = free_ic value = 50 } 
+}
+
+}
+
+event = {
+	id = 12106
+	random = no
+	name = "12106NAME" 
+	desc = "12106DESC" 
+
+	country = ITA
+
+	trigger = {
+			ai = yes
+	}
+
+	action = {
+		name = "12106a" #Adds IC
+		command = { type = free_ic value = 25 } 
 }
 
 }
