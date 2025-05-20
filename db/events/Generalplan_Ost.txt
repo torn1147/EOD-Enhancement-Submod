@@ -10951,7 +10951,6 @@ event = {
 	country = GER
 	
 	trigger = { 
-		ai = no
 		war = { country = GER country = ENG }
 		event = 2003003 #Fall of France (france.txt)
 	}	 
@@ -10966,27 +10965,29 @@ event = {
 	picture = "sealionplan"
 
 	action = {
+		ai_chance = 0
 		name = 1000951a
 		#Leave the events on, set Sealion flag for beach defense events
 		command = { type = setflag which = sealionevents }
 	}
 	
 	action = {
+		ai_chance = 100
 		name = 1000951b
-		#Disable all events in the Generalplan Ost mod that help the UK against Sealion
-		command = { type = sleepevent which = 1000672 }
-		command = { type = sleepevent which = 1000914 }
-		command = { type = sleepevent which = 1000915 }
-		command = { type = sleepevent which = 1000916 }
-		command = { type = sleepevent which = 1000917 }
-		command = { type = sleepevent which = 1000918 }
-		command = { type = sleepevent which = 1000919 }
-		command = { type = sleepevent which = 1000920 }
-		command = { type = sleepevent which = 1000923 }
-		command = { type = sleepevent which = 1000924 }
-		command = { type = sleepevent which = 1000925 }
-		command = { type = sleepevent which = 1000926 }
-		command = { type = sleepevent which = 1000938 }	
+		#Disable all events in the Generalplan Ost mod that help the UK against Sealion unless human italy & AI britain
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000672 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000914 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000915 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000916 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000917 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000918 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000919 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000920 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000923 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000924 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000925 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000926 }
+		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000938 }	
 	}
 }
 
