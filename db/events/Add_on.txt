@@ -6985,7 +6985,15 @@ event = {
 	random = no
 	country = ENG
 	
-	trigger = { control = { province = 55 data = GER } }
+	trigger = { 
+		control = { province = 55 data = GER } 
+		ai = yes 
+		OR = {
+			NOT = { ai = GER } 
+			NOT = { ai = ITA } 
+		}
+		
+	}
 	
 	date = { day = 2 month = january year = 1935 }
 	offset = 5
@@ -7000,9 +7008,9 @@ event = {
 		command = { type = add_corps which = "Canal Reaction Force 1" value = land when = -1 where = 781 }
 		command = { type = add_division value = infantry when = 7 where = medium_armor }
 		command = { type = add_division value = infantry when = 7 where = artillery }
-		command = { trigger = { NOT = { ai = ITA } } type = add_division value = infantry when = 7  }
- 		command = { trigger = { NOT = { ai = ITA } } type = add_division value = infantry when = 7  }
-		command = { trigger = { NOT = { ai = ITA } } type = add_division value = infantry when = 7  }
+		command = { type = add_division value = infantry when = 7  }
+ 		command = { type = add_division value = infantry when = 7  }
+		command = { type = add_division value = infantry when = 7  }
 		command = { type = add_corps which = "Canal Reaction Force 2" value = land when = -1 where = 782 }
 		command = { type = add_division value = infantry when = 7 where = medium_armor }
 		command = { type = add_division value = infantry when = 7 where = artillery }
@@ -7013,10 +7021,10 @@ event = {
 		command = { type = add_division value = infantry when = 7  }
 		
 		#reinforce ports and canal area
-		command = { trigger = { NOT = { ai = ITA } } type = add_corps which = "Canal Reaction Force 4" value = land when = -1 where = 789 }
-		command = { trigger = { NOT = { ai = ITA } } type = add_division value = armored_car when = 3 where = anti_air }
-		command = { trigger = { NOT = { ai = ITA } } type = add_division value = motorized when = 0 where = medium_armor }
-		command = { trigger = { NOT = { ai = ITA } } type = add_division value = infantry when = 7  }
+		command = { type = add_corps which = "Canal Reaction Force 4" value = land when = -1 where = 789 }
+		command = { type = add_division value = armored_car when = 3 where = anti_air }
+		command = { type = add_division value = motorized when = 0 where = medium_armor }
+		command = { type = add_division value = infantry when = 7  }
 
 		command = { type = add_corps which = "Canal Reaction Force 5" value = land when = -1 where = 900 }
 		command = { type = add_division value = armored_car when = 3 where = anti_air }
@@ -7042,10 +7050,10 @@ event = {
 		command = { type = add_division value = infantry when = 7  }
 		command = { type = add_division value = infantry when = 7  }
 
-		command = { trigger = { NOT = { ai = ITA } } type = add_corps which = "Middle East Division" value = land when = -1 where = 1172 }
-		command = { trigger = { NOT = { ai = ITA } } type = add_division value = infantry when = 7  }
-		command = { trigger = { NOT = { ai = ITA } } type = add_division value = infantry when = 7  }
-		command = { trigger = { NOT = { ai = ITA } } type = add_division value = infantry when = 7  }
+		command = { type = add_corps which = "Middle East Division" value = land when = -1 where = 1172 }
+		command = { type = add_division value = infantry when = 7  }
+		command = { type = add_division value = infantry when = 7  }
+		command = { type = add_division value = infantry when = 7  }
 
 		#alert home forces of readiness to move
 		command = { type = add_corps which = "Empire Transports" value = naval when = -1  where = 27 }
@@ -7060,10 +7068,8 @@ event = {
 		command = { type = add_division value = marine when = 2  }
 		command = { type = add_division value = marine when = 2  }
 		
-		command = { type = manpowerpool value = 50 }
-		command = { type = supplies value = 500 }
-		command = { type = oilpool value = 100 }
-		command = { type = money value = 2000 }
+		command = { type = manpowerpool value = -420 }
+
 		}
 	}
 #########################################################################
@@ -17893,3 +17899,4 @@ event = {
 		 command = { type = add_brigade value = artillery }
 	}
 }
+
