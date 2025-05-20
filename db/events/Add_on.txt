@@ -11060,8 +11060,10 @@ event = {
 	random = no
 	country = SOV
 
-	trigger = { control = { province = 553 data = SOV } 
-		    war = { country = GER country = SOV } 
+	trigger = {	ai = yes
+			NOT = { ai = GER }
+			control = { province = 553 data = SOV } 
+			war = { country = GER country = SOV } 
 	}
 
 	name = "EVT_NAME_1000415"
@@ -11112,9 +11114,10 @@ event = {
 	random = no
 	country = SOV
 
-	trigger = {
-		   control = { province = 663 data = SOV }
-		   war = { country = GER country = SOV }
+	trigger = {	ai = yes
+			NOT = { ai = GER }
+		   	control = { province = 663 data = SOV }
+		   	war = { country = GER country = SOV }
 	}
 
 	name = "EVT_NAME_1000416"
@@ -11211,6 +11214,7 @@ event = {
 
 	trigger = {
 		ai = yes
+		NOT = { ai = GER }
 		war = { country = SOV country = GER }
 		OR = { AND = { not = { ai = GER } lost_national = { country = SOV value = 5 } } AND = { ai = GER lost_national = { country = SOV value = 10 } } }
 	}
@@ -11303,6 +11307,7 @@ event = {
 
 	trigger = {
 		ai = yes
+		NOT = { ai = GER }
 		war = { country = SOV country = GER }
 		OR = { AND = { not = { ai = GER } lost_national = { country = SOV value = 10 } } AND = { ai = GER lost_national = { country = SOV value = 10 } } }
 	}
@@ -11430,6 +11435,8 @@ event = {
 	country = SOV
 	
 	trigger = { 
+		ai = yes
+		NOT = { ai = GER }
 		war = { country = SOV country = GER }
 		control = { province = 641 data = SOV }
 		control = { province = 624 data = -2 }		
@@ -11471,7 +11478,8 @@ event = {
 	random = no
 	country = SOV
 
-	trigger = { 
+	trigger = {	ai = yes
+			NOT = { ai = GER }
 		war = { country = SOV country = GER }
 		control = { province = 691 data = SOV }
 		control = { province = 625 data = -2 }		
@@ -11510,7 +11518,8 @@ event = {
 	random = no
 	country = SOV
 	
-	trigger = { 
+	trigger = {	ai = yes
+			NOT = { ai = GER }
 		war = { country = SOV country = GER }
 		control = { province = 644 data = SOV }
 		control = { province = 625 data = -2 }		
@@ -11547,6 +11556,7 @@ event = {
 
 	trigger = {
 		ai = yes
+		NOT = { ai = GER }
 		war = { country = SOV country = GER }
 		OR = { AND = { not = { ai = GER } lost_national = { country = SOV value = 10 } } AND = { ai = GER lost_national = { country = SOV value = 10 } } }
 	}
@@ -11610,7 +11620,8 @@ event = {
 	random = no
 	country = SOV
 
-	trigger = { 
+	trigger = {	ai = yes
+			NOT = { ai = GER }
 		war = { country = SOV country = GER }
 		war = { country = SOV country = FIN }
 		control = { province = 535 data = SOV }	
@@ -11644,7 +11655,8 @@ event = {
 	random = no
 	country = SOV
 	
-	trigger = { 
+	trigger = {	ai = yes
+			NOT = { ai = GER }
 		war = { country = SOV country = GER }
 		control = { province = 654 data = SOV }	
 		control = { province = 617 data = -2 }	
