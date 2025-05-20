@@ -7994,7 +7994,11 @@ event = {
 	random = no
 	country = ENG
 
-	decision = { OR = { war = { country = JAP } war = { country = GER } } }
+	decision = { 
+			OR = { war = { country = JAP } war = { country = GER } }
+			ai = yes
+			OR = { NOT = { ai = ITA } NOT = { ai = GER } }
+ 	}
 
 	decision_trigger = { supplies = 1000 puppet = { country = U02 } }
 
@@ -13963,6 +13967,10 @@ event = {
 		}
 	decision_trigger = { supplies = 1000 manpower = 60 }
 	trigger = { 
+			OR = {
+				NOT = { ai = GER }
+				NOT = { ai = ITA }				
+				}
 			war = { country = GER } 
 			event = 9300351 # Operation Seelowe
 			control = { province = 55 data = -2 } # Paris
@@ -13988,8 +13996,8 @@ event = {
 		command = { type = build_division which = militia when = 1 cost = 0.1 name = "4th Home Guard" where = 40 }
 		command = { type = build_division which = militia when = 1 cost = 0.1 name = "5th Home Guard" where = 50 }
 		command = { type = build_division which = militia when = 1 cost = 0.1 name = "6th Home Guard" where = 60 }
-	  	command = { trigger = { ai = no } type = manpowerpool value = -60 }
-		command = { trigger = { ai = no } type = supplies value = -1000 }
+	  	command = { type = manpowerpool value = -60 }
+		command = { type = supplies value = -1000 }
 	}
 }
 

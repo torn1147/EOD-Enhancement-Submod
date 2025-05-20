@@ -13,7 +13,6 @@ event = {
 
 	decision = {
 		ai = no
-
 	}
 	
 	decision_trigger = {
@@ -102,6 +101,7 @@ event = {
 	action = {
 		name = "12104a" #Adds IC
 		command = { type = free_ic value = 50 } 
+		command = { type = setflag which = germanoilboost }
 }
 
 }
@@ -143,3 +143,29 @@ event = {
 }
 
 }
+
+event = {
+	id = 12107
+	random = no
+	name = "12107NAME" 
+	desc = "12107DESC" 
+
+	country = GER
+
+	date = { day = 1 month = may year = 1941 }
+	offset = 10
+	deathdate = { day = 29 month = december year = 1999 }
+
+	trigger = {
+			ai = yes
+			war = { country = GER country = SOV }
+			flag = germanoilboost
+	}
+
+	action = {
+		name = "12107a" #Adds oil
+		command = { type = oilpool value = 300000 } 
+}
+
+}
+

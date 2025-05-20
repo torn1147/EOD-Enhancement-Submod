@@ -6,9 +6,15 @@ event = {
 	country = SOV
 	random = no
 
-	trigger = { ai = no } # Only for players
+	trigger = { 
+		OR = {
+			ai = no
+			ai = GER
+		}
 
-	name = "Soviet nerf for players" #Soviet nerf for players
+	} 
+
+	name = "Soviet nerf" #Soviet nerf
 	desc = "IC build penalty" #IC build penalty
 	style = 2
 	picture = "Four_Year"
