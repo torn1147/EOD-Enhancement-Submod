@@ -10975,19 +10975,19 @@ event = {
 		ai_chance = 100
 		name = 1000951b
 		#Disable all events in the Generalplan Ost mod that help the UK against Sealion unless human italy & AI britain
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000672 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000914 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000915 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000916 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000917 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000918 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000919 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000920 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000923 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000924 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000925 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000926 }
-		command = { trigger = { NOT = { ai = ITA } ai = ENG } type = sleepevent which = 1000938 }	
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000672 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000914 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000915 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000916 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000917 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000918 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000919 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000920 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000923 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000924 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000925 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000926 }
+		command = { trigger = { OR = { ai = ITA  NOT = { ai = ENG } } } type = sleepevent which = 1000938 }	
 	}
 }
 
